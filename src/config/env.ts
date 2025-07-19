@@ -43,7 +43,7 @@ export const env = cleanEnv(process.env, {
         desc: "Allowed origins, separated by commas and no spaces in between (CSV).",
     }),
 
-    vercel: str({
+    ANIWATCH_API_DEPLOYMENT_ENV: str({
         choices: API_DEPLOYMENT_ENVIRONMENTS,
         default: DeploymentEnv.NODEJS,
         example: DeploymentEnv.VERCEL,
